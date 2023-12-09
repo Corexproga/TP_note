@@ -22,4 +22,20 @@ La requête nous retourne bien le contenu que l'on a ajouté via le fichier data
 22/
 @Autowired permet d'injecter les dépendances pour associer automatiquement les beans nécessaires dans les paramètres d'AddressRepository
 
+TP4
+6/
+Pour MeteoConcept, on a besoin d'un token afin d'accéder aux données
+
+On appelle https://api.meteo-concept.com/api/forecast/daily/ en ajoutant ensuite le token et la latitude et la longitude
+
+On utilise un GET car on récupère des données
+
+On concatène dans une String les informations nécessaires pour l'url
+
+Les informations météorologiques dans la réponse se trouvent dans le "forecast", nous pouvons ensuite sélectionné les éléments que l'on souhaite extraire
+
+la température --> on a tmin et tmax
+
+prévision météo --> weather, qui est un code numérique correspondant à différentes prévisions, dont nous avons le détail en annexe de la documentation (et nous permet de créer un enum correspondant)
+
 Github : https://github.com/Corexproga/TP_note
