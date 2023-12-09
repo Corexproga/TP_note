@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Meteo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<div th:insert="fragments/general :: navbar"></div>
+
+<body>
+    <div class="container">
+        <p th:text="' ville : ' + ${city}"></p>
+        <p th:text="'votre adresse : ' + ${address}"></p>
+        <p th:text="'temperature minimal : ' + ${tmin} + '°C'"></p>
+        <p th:text="'temperature maximal : ' + ${tmax} + '°C'"></p>
+        <p th:text="'météo actuelle : ' + ${weather} "></p>
+        <p th:text="'direction du vent : ' + ${wind_dir}"></p>
+        <p th:text="'vitesse du vent : ' + ${windspeed} + 'km/h'"></p>
+    </div>
+</body>
+
+</html>
